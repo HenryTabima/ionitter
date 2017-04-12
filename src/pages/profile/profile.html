@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Profile
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="{{user.img}}"/>
+    <ion-card-content>
+      <ion-card-title>
+        {{user.nick_name}}
+      </ion-card-title>
+      <p>
+        {{user.bio}}
+      </p>
+
+      <ion-item>
+        <ion-icon name="logo-twitter" style="color:blue"></ion-icon>
+        {{user.twitter}}
+      </ion-item>
+      <ion-item>
+        <ion-icon name="logo-github" style="color:blue"></ion-icon>
+        {{user.github}}
+      </ion-item>
+      <ion-item>
+        <ion-icon name="book" style="color:blue"></ion-icon>
+        {{user.medium}}
+      </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+  <ion-list>
+    <ion-item *ngFor="let item of notifications">
+      <ion-thumbnail item-left>
+        <img src="{{item.img}}">
+      </ion-thumbnail>
+      <h2>{{item.nick_name}}</h2>
+      <p>{{item.text}}</p>
+      <button ion-button clear item-right>View</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
