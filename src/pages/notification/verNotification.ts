@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavParams } from 'ionic-angular'
-import { notification } from '../../commons/notification'
+import { Notification } from '../../commons/notification'
 
 @Component({
   selector: 'ver-notification',
@@ -25,7 +25,7 @@ import { notification } from '../../commons/notification'
 })
 export class VerNotificationPage {
 
-  notification:notification;
+  notification:Notification;
 
   constructor(private navParams:NavParams){
     this.notification = navParams.get('id')

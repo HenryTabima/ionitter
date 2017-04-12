@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { notification } from '../../commons/notification'
+import { Notification } from '../../commons/notification'
 import { VerNotificationPage } from './verNotification'
 
 @Component({
@@ -9,7 +9,7 @@ import { VerNotificationPage } from './verNotification'
 })
 export class NotificationPage {
 
-  notifications:Array<notification> = [
+  notifications:Array<Notification> = [
       {action: 'reply', img:'https://placeimg.com/150/150/people/4', nick_name:'@merlyn', text:'ionitter es lo mas'},
       {action: 'replatzitt', img:'https://placeimg.com/150/150/people/5', nick_name:'@quattrocchi', text:'que chulo que esta esta app en iOS'},
       {action: 'mention', img:'https://placeimg.com/150/150/people/6', nick_name:'@rosario', text:'Ya tu sabe como es'}
@@ -19,7 +19,7 @@ export class NotificationPage {
 
   }
 
-  verNotification(_notification:notification){
+  verNotification(_notification:Notification){
     this.navCtrl.push(VerNotificationPage, {
       id:_notification
     })

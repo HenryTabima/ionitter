@@ -1,4 +1,4 @@
-export interface user{
+export interface User{
   img:string
   nick_name:string
   interactions:number
