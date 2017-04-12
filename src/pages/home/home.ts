@@ -14,8 +14,10 @@ export class HomePage {
     {img:'https://placeimg.com/150/150/people/3', nick_name:'@gorecki', text:'Ya tu sabe como es'}
   ]
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController) {}
 
+  onFav(response:string){
+    console.log(response)
   }
 
 }
