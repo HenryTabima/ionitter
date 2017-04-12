@@ -12,6 +12,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { LoginPage } from '../pages/login/login'
+import { VerNotificationPage } from '../pages/notification/verNotification'
+
+// var links = [
+//   { component: LoginPage, name: 'login', segment: 'login' },
+//   { component: TabsPage, name: 'tabs', segment: 'tabs' }
+// ]
 
 @NgModule({
   declarations: [
@@ -21,6 +27,7 @@ import { LoginPage } from '../pages/login/login'
     HomePage,
     TabsPage,
     LoginPage,
+    VerNotificationPage,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +40,8 @@ import { LoginPage } from '../pages/login/login'
     ProfilePage,
     HomePage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    VerNotificationPage
   ],
   providers: [
     StatusBar,

@@ -10,7 +10,7 @@ import { notification } from '../../commons/notification'
 export class ProfilePage {
 
   user:user = {
-    "img": 'https://placeimg.com/150/150/people/9',
+    "img": 'https://placeimg.com/400/400/people/12',
     "nick_name": '@mgilliam',
     "interactions": 1,
     "github": 'mgilliam',

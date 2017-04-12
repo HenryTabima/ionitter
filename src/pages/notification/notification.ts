@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { notification } from '../../commons/notification'
+import { VerNotificationPage } from './verNotification'
 
 @Component({
   selector: 'page-notification',
@@ -16,6 +17,12 @@ export class NotificationPage {
 
   constructor(public navCtrl: NavController) {
 
+  }
+
+  verNotification(_notification:notification){
+    this.navCtrl.push(VerNotificationPage, {
+      id:_notification
+    })
   }
 
 }
