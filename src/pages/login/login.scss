@@ -6,10 +6,16 @@ page-login {
   img {
     display: block;
     margin: auto;
-    padding-top: 10%;
+    padding-top: 20%;
   }
-
-  .button {
-    margin: 13%;
+  .list > .item.item-block {
+    padding-left: 0;
+  }
+  .list-ios >
+  .item-ios:first-child {
+    border-top: none;
+  }
+  .item-ios:last-child {
+    border-bottom: none;
   }
 }
